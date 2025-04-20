@@ -16,7 +16,7 @@ class ConsumePublish():
                 body_json = json.loads(body_str)
 
                 query = query_post(
-                     body_json['titulo'], body_json['descricao'], body_json['preco'], body_json['categoria'], body_json['marca'], body_json['modelo'], body_json['codpro'], body_json['id'])
+                     body_json['titulo'], body_json['descricao'], body_json['preco'], body_json['categoria'], body_json['marca'], body_json['modelo'], body_json['codpro'], body_json['id'], body_json['cor'])
                 
                 cursor.execute(query)
                 self.connection.commit()
